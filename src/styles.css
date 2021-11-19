@@ -1,0 +1,235 @@
+:root {
+  --branding-color: #85e8d0;
+  --secondary-color: #6c63ff;
+  --heading-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Poppins", serif;
+}
+
+body {
+  font-family: var(--heading-font-family);
+  background: linear-gradient(
+    -225deg,
+    rgb(82, 222, 195) 0%,
+    rgb(248, 250, 243) 100%
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  color: black;
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hero {
+  background: url(/Images/montain.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h2 {
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.ofsted-banner {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.what-we-do {
+}
+
+.content-container {
+  padding: 60px 20px;
+}
+
+.content {
+  margin: 30px;
+}
+
+.content-container h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content-container h2 {
+  font-size: 18px;
+  font-family: var(--secondary-font-family);
+}
+
+.content h3 {
+  font-size: 24px;
+  font-family: var(--secondary-font-family);
+  line-height: 1.5;
+  margin: 20px 0 0;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.my-photo {
+  border-radius: 20px;
+}
+
+.work-title h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.btn-primary {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 100px 60px 0px;
+}
+.logo {
+  max-height: 100px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  font-family: var(--secondary-font-family);
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background-color: var(--branding-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+fotter .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-family: var(--secondary-font-family);
+}
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
